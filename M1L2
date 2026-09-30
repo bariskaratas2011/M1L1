@@ -1,0 +1,9 @@
+import random
+
+while True:
+    password = ""
+    characters = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    length = int(input("Enter the length of the password: "))
+    for i in range(length):
+        password += random.choice(characters)
+    print(password)
